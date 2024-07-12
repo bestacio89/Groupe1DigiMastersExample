@@ -81,16 +81,5 @@ public class Product {
         this.denomination = denomination;
     }
 
-    public Product(String name, String description, Category category,
-                   Type type, Denomination denomination) {
 
-        this.name = name;
-        this.description = description;
-        this.category = category;
-        this.type = type; // Assuming a field named 'type' exists
-        this.denomination = denomination;
-
-    }
-    public Product()
-    {}
 }
