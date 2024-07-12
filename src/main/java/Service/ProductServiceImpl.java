@@ -22,6 +22,9 @@ public class ProductServiceImpl implements ProductService {
         this.validator = factory.getValidator();
     }
 
+    public ProductServiceImpl(ProductRepository productRepository) {
+    }
+
     @Override
     public List<Product> findAll() {
         return productRepository.findAll();
