@@ -22,7 +22,9 @@ public class ProductServiceImpl implements ProductService {
         this.validator = factory.getValidator();
     }
 
-    public ProductServiceImpl(ProductRepository productRepository) {
+    public ProductServiceImpl(ProductRepository productRepository, ProductRepository productRepository1, Validator validator) {
+        this.productRepository = productRepository1;
+        this.validator = validator;
     }
 
     @Override
