@@ -5,7 +5,7 @@ import TPAvance.Models.AdressesPostale;
 public class AdrespostaleTest {
     public static void main(String[] args) {
 
-        // Create two instances of AdressesPostale
+        // Create two instances of AdressesPostale using the parameterless constructor
         AdressesPostale adresse1 = new AdressesPostale();
         AdressesPostale adresse2 = new AdressesPostale();
 
@@ -15,23 +15,22 @@ public class AdrespostaleTest {
         adresse1.setVille("Anytown");
         adresse1.setCodePostale("12345");
 
-        // Set information for the second address
-        adresse2.setNumeroDerue(456);
-        adresse2.setLibelleDeRue("Elm Street");
-        adresse2.setVille("Springfield");
-        adresse2.setCodePostale("54321");
+        // Create two instances of AdressesPostale using the parameterized constructor
+        AdressesPostale adresse3 = new AdressesPostale(456, "Elm Street", "Springfield", "54321");
+        AdressesPostale adresse4 = new AdressesPostale(789, "Maple Avenue", "Smalltown", "67890");
 
-        // Print the information for both addresses (optional)
+        // Print the full address for addresses created using the parameterless constructor
         System.out.println("Adresse 1:");
-        System.out.println("  Numéro de rue: " + adresse1.getNumeroDerue());
-        System.out.println("  Libellé de rue: " + adresse1.getLibelleDeRue());
-        System.out.println("  Ville: " + adresse1.getVille());
-        System.out.println("  Code postal: " + adresse1.getCodePostale());
+        System.out.println("  Full Address: " + adresse1.getFullAddress());
 
         System.out.println("\nAdresse 2:");
-        System.out.println("  Numéro de rue: " + adresse2.getNumeroDerue());
-        System.out.println("  Libellé de rue: " + adresse2.getLibelleDeRue());
-        System.out.println("  Ville: " + adresse2.getVille());
-        System.out.println("  Code postal: " + adresse2.getCodePostale());
+        System.out.println("  Full Address: " + adresse2.getFullAddress());
+
+        // Print the full address for addresses created using the parameterized constructor
+        System.out.println("\nAdresse 3:");
+        System.out.println("  Full Address: " + adresse3.getFullAddress());
+
+        System.out.println("\nAdresse 4:");
+        System.out.println("  Full Address: " + adresse4.getFullAddress());
     }
 }

@@ -8,7 +8,21 @@ public class AdressesPostale {
         private String ville;
         private String codePostale;
 
-        // Getters
+           public AdressesPostale() {
+    }
+
+    // Fully parameterized constructor
+    public AdressesPostale(int numeroDerue, String libelleDeRue, String ville, String codePostale) {
+        this.numeroDerue = numeroDerue;
+        this.libelleDeRue = libelleDeRue;
+        this.ville = ville;
+        this.codePostale = codePostale;
+    }
+
+
+
+
+    // Getters
         public int getNumeroDerue() {
             return numeroDerue;
         }
@@ -40,4 +54,8 @@ public class AdressesPostale {
         public void setCodePostale(String codePostale) {
             this.codePostale = codePostale;
         }
+
+          public String getFullAddress() {
+        return numeroDerue + " " + libelleDeRue + ", " + ville + ", " + codePostale;
+    }
 }
