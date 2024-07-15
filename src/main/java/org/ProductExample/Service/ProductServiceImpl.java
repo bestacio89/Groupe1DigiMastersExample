@@ -1,8 +1,8 @@
-package Service;
+package org.ProductExample.Service;
 
-import Model.Product;
-import Repository.ProductRepository;
-import Repository.ProductRepositoryImpl;
+import org.ProductExample.Entites.Model.Product;
+import org.ProductExample.Repository.ProductRepository;
+import org.ProductExample.Repository.ProductRepositoryImpl;
 
 import javax.validation.ConstraintViolation;
 import javax.validation.Validation;

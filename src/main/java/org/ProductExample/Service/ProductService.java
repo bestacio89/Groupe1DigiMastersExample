@@ -1,6 +1,6 @@
-package Service;
+package org.ProductExample.Service;
 
-import Model.Product;
+import org.ProductExample.Entites.Model.Product;
 
 import java.util.List;
 import java.util.Optional;
