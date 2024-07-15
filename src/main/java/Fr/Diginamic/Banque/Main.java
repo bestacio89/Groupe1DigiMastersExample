@@ -13,7 +13,7 @@ public class Main {
         Compte compte = new Compte(solde, numCompte);
 
         // Display account details
-        System.out.println(compte.getSolde());
+        System.out.println(compte.PrintSolde());
         System.out.println(compte);
 
     }

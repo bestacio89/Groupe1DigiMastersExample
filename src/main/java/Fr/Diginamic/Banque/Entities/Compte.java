@@ -15,20 +15,19 @@ public class Compte {
         return NumDeCompte;
     }
 
-    public void setNumDeCompte(String numDeCompte) {
-        NumDeCompte = numDeCompte;
-    }
 
     public void setSolde(double solde) {
         Solde = solde;
     }
 
-    public String getSolde() {
+    public String PrintSolde() {
         return "Votre solde sur le compte " + NumDeCompte+ " est de: "  + Solde;
     }
 
-    void Retrait(double montant) {
-        double soldeFinal  = this.Solde - montant;
-        setSolde(soldeFinal);
-    }
+     public double getSolde(){
+        return Solde;
+     }
+
+
+
 }
