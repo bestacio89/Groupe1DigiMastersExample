@@ -1,4 +1,4 @@
-package Entites;
+package TPAvance;
 
 
 public class AdressesPostale {

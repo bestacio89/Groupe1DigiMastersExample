@@ -1,8 +1,8 @@
-package Groupe1DigiMasters.example;
+package org.ProductExample.Main;
 
-import Model.Product;
-import Service.ProductService;
-import Service.ProductServiceImpl;
+import org.ProductExample.Entites.Model.Product;
+import org.ProductExample.Service.ProductService;
+import org.ProductExample.Service.ProductServiceImpl;
 import Util.HibernateUtil;
 
 public class Main {

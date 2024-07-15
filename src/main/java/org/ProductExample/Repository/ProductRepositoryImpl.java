@@ -1,6 +1,6 @@
-package Repository;
+package org.ProductExample.Repository;
 
-import Model.Product;
+import org.ProductExample.Entites.Model.Product;
 import Util.HibernateUtil;
 import org.hibernate.Session;
 import org.hibernate.Transaction;

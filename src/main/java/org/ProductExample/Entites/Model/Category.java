@@ -1,12 +1,12 @@
-package Model;
+package org.ProductExample.Entites.Model;
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 import java.util.List;
 
 @Entity
-@Table(name = "types")
-public class Type {
+@Table(name = "categories")
+public class Category {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -16,9 +16,8 @@ public class Type {
     @Size(min = 1, max = 100)
     private String name;
 
-    @OneToMany(mappedBy = "type")
+    @OneToMany(mappedBy = "category")
     private List<Product> products;
-
     // Getters and Setters
     public Long getId() {
         return id;
