@@ -1,5 +1,7 @@
 package ConwayLife;
 
+import ConwayLife.Models.ConwayLifeGame;
+
 import java.util.Scanner;
 
 public class ConwayGameMain {

@@ -1,4 +1,4 @@
-package ConwayLife;
+package ConwayLife.Libraries;
 
 public class SpaceshipLibrary {
 
