@@ -10,7 +10,9 @@ public class PersonneTest {
         System.out.println("Example 1: Using parameterized constructor");
         String adresseComplete = "10 Maple Street, Newville, 98765";
         Personne personneComplete = new Personne("Lee", "Michael", new AdressesPostale(10,
-                "Maple Street", "Newville", "98675"  ));
+             "Maple Street", "Newville", "98675"  ));
+        Personne  xFrank = new Personne("Perez", "Carlos");
+        xFrank.setAdressePostale(new AdressesPostale(10, "Maple Avenue", "Houston", "65236"  ));
 
         System.out.println("  Nom: " + personneComplete.getNom());
         System.out.println("  Prénom: " + personneComplete.getPrenom());
@@ -25,5 +27,10 @@ public class PersonneTest {
         System.out.println("  Personne information:");
         System.out.println("    Fullname: " + personneEmpty.getFullname());
         System.out.println("    Adresse: " + personneEmpty.getAdressePostale());
+
+        System.out.println("Fullname: " + xFrank.getFullname());
+        System.out.println("Full address: " + xFrank.getAdressePostale());
+
+
     }
 }
