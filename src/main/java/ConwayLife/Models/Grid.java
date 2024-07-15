@@ -1,4 +1,4 @@
-package ConwayLife;
+package ConwayLife.Models;
 
 public class Grid {
     private final Cell[][] cells;

@@ -1,4 +1,4 @@
-package ConwayLife;
+package ConwayLife.Models;
 public class Cell {
 
     private boolean alive;

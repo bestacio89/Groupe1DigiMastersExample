@@ -1,4 +1,7 @@
-package ConwayLife;
+package ConwayLife.Models;
+
+import ConwayLife.Libraries.OscillatorLibrary;
+import ConwayLife.Libraries.SpaceshipLibrary;
 
 import java.util.Random;
 import java.util.Scanner; // Added for user input
