@@ -1,6 +1,8 @@
 package Fr.Diginamic.Banque; // Assuming a Test package for this class
 
 import Fr.Diginamic.Banque.Entities.Compte;
+import Fr.Diginamic.Banque.Entities.Credit;
+import Fr.Diginamic.Banque.Entities.Operation;
 
 public class Main {
 
@@ -14,7 +16,13 @@ public class Main {
 
         // Display account details
         System.out.println(compte.PrintSolde());
-        System.out.println(compte);
+        //System.out.println(compte);
+
+        double add = 2500.56;
+        Credit operation = new Credit (compte);
+        operation.getType();
+        operation.Depot(2500);
+        compte.PrintSolde();
 
     }
 }
