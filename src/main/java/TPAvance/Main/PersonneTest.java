@@ -1,4 +1,7 @@
-package TPAvance;
+package TPAvance.Main;
+
+import TPAvance.Models.AdressesPostale;
+import TPAvance.Models.Personne;
 
 public class PersonneTest {
     public static void main(String[] args) {

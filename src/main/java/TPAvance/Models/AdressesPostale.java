@@ -1,4 +1,4 @@
-package TPAvance;
+package TPAvance.Models;
 
 
 public class AdressesPostale {

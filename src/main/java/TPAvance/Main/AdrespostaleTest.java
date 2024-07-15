@@ -1,4 +1,6 @@
-package TPAvance;
+package TPAvance.Main;
+
+import TPAvance.Models.AdressesPostale;
 
 public class AdrespostaleTest {
     public static void main(String[] args) {
